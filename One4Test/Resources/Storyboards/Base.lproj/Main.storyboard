@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Stargazers View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="One4Test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StargazersViewController" customModule="One4Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="nxe-Fl-YUx">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifierStargazer" rowHeight="100" id="RhE-9b-8pA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifierStargazer" rowHeight="100" id="RhE-9b-8pA" customClass="StargazerTableViewCell" customModule="One4Test" customModuleProvider="target">
                                         <rect key="frame" x="20" y="55.5" width="374" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RhE-9b-8pA" id="Hrq-l7-ghc">
@@ -35,10 +35,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="andrealufino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="e3k-Is-Lub">
                                                     <rect key="frame" x="100" y="8" width="254" height="84"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="78" id="Yr3-GK-6ne"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -54,8 +51,16 @@
                                                 <constraint firstAttribute="bottom" secondItem="9N7-fn-CAm" secondAttribute="bottom" constant="8" id="xzy-PC-JJm"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblLoginName" destination="e3k-Is-Lub" id="X7T-3I-NxT"/>
+                                            <outlet property="profilePicture" destination="9N7-fn-CAm" id="32O-qS-fJi"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Yht-Ag-U6V"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="VjZ-3b-yNr"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -68,6 +73,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Omi-uk-iRw"/>
+                    <connections>
+                        <outlet property="tableView" destination="nxe-Fl-YUx" id="cIM-UA-B4V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

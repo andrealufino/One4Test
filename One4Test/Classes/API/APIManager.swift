@@ -16,13 +16,13 @@ struct APIManager {
     
     struct Github {
         
-        private static let token = "114e209a699a620fe18b9bcbe715c84325fcacb7"
+        private static let token = "7767e4362d536718326e6432002a0e88e03d421f"
         
         static func getStargazers(
             forRepo repo: String,
             resultsPerPage: Int,
             page: Int,
-            completion: @escaping (Result<[String], Error>) -> Void) {
+            completion: @escaping (Result<[User], APIError>) -> Void) {
             
             do {
                 guard try Reachability().connection != .unavailable else {
@@ -55,7 +55,7 @@ struct APIManager {
             ]
             
             let _ = AF.request(
-                "https://api.github.com/repos/andrealufino/Luminous/stargazers",
+                "https://api.github.com/repos/andrealufino/\(repo)/stargazers",
                 method: .get,
                 parameters: params,
                 encoder: URLEncodedFormParameterEncoder.default,
@@ -67,10 +67,26 @@ struct APIManager {
                         if let value = response.value {
                             let json = JSON(value)
                             
-                            print("JSON\n1: \(json.arrayValue.first!["login"].stringValue)")
+                            if let rawUsers = json.array {
+                                do {
+                                    let decoder = JSONDecoder.init()
+                                    var users: [User] = []
+                                    try rawUsers.forEach { (rawUser) in
+                                        let data = try rawUser.rawData()
+                                        users.append(try decoder.decode(User.self, from: data))
+                                    }
+                                    completion(.success(users))
+                                } catch SwiftyJSONError.invalidJSON {
+                                    completion(.failure(APIError.init(debugMessage: "Invalid JSON.")))
+                                } catch _ {
+                                    completion(.failure(APIError.init(debugMessage: "JSON decoding failed.")))
+                                }
+                            } else {
+                                completion(.failure(APIError.serverError))
+                            }
                         }
-                    case .failure(let error):
-                        print("Error!\n\(error.localizedDescription)")
+                    case .failure(_):
+                        completion(.failure(APIError.serverError))
                     }
                 }
         }

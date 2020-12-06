@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		AD721F9A257CED95003F74C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD721F99257CED95003F74C3 /* AppDelegate.swift */; };
 		AD721F9C257CED95003F74C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD721F9B257CED95003F74C3 /* SceneDelegate.swift */; };
-		AD721F9E257CED95003F74C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD721F9D257CED95003F74C3 /* ViewController.swift */; };
+		AD721F9E257CED95003F74C3 /* StargazersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD721F9D257CED95003F74C3 /* StargazersViewController.swift */; };
 		AD721FA1257CED95003F74C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD721F9F257CED95003F74C3 /* Main.storyboard */; };
 		AD721FA3257CED98003F74C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD721FA2257CED98003F74C3 /* Assets.xcassets */; };
 		AD721FA6257CED98003F74C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD721FA4257CED98003F74C3 /* LaunchScreen.storyboard */; };
@@ -18,13 +18,18 @@
 		AD721FBF257D1617003F74C3 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD721FBE257D1617003F74C3 /* APIError.swift */; };
 		AD721FC4257D210A003F74C3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD721FC3257D210A003F74C3 /* Config.swift */; };
 		AD721FC8257D21AE003F74C3 /* StargazerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD721FC7257D21AE003F74C3 /* StargazerTableViewCell.swift */; };
+		AD721FCB257D2A5A003F74C3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD721FCA257D2A5A003F74C3 /* User.swift */; };
+		AD721FCE257D390A003F74C3 /* StargazersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD721FCD257D390A003F74C3 /* StargazersViewModel.swift */; };
+		AD721FD3257D3A5F003F74C3 /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD721FD2257D3A5F003F74C3 /* Notifier.swift */; };
+		AD721FD6257D3A9A003F74C3 /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD721FD5257D3A9A003F74C3 /* NotificationNameExtension.swift */; };
+		AD721FD9257D3FC3003F74C3 /* UIViewController+APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD721FD8257D3FC3003F74C3 /* UIViewController+APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD721F96257CED95003F74C3 /* One4Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = One4Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD721F99257CED95003F74C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD721F9B257CED95003F74C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD721F9D257CED95003F74C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD721F9D257CED95003F74C3 /* StargazersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazersViewController.swift; sourceTree = "<group>"; };
 		AD721FA0257CED95003F74C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD721FA2257CED98003F74C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD721FA5257CED98003F74C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,6 +38,11 @@
 		AD721FBE257D1617003F74C3 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		AD721FC3257D210A003F74C3 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		AD721FC7257D21AE003F74C3 /* StargazerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerTableViewCell.swift; sourceTree = "<group>"; };
+		AD721FCA257D2A5A003F74C3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AD721FCD257D390A003F74C3 /* StargazersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazersViewModel.swift; sourceTree = "<group>"; };
+		AD721FD2257D3A5F003F74C3 /* Notifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
+		AD721FD5257D3A9A003F74C3 /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
+		AD721FD8257D3FC3003F74C3 /* UIViewController+APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+APIError.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,9 @@
 				AD721F99257CED95003F74C3 /* AppDelegate.swift */,
 				AD721F9B257CED95003F74C3 /* SceneDelegate.swift */,
 				AD721FC3257D210A003F74C3 /* Config.swift */,
+				AD721FD2257D3A5F003F74C3 /* Notifier.swift */,
+				AD721FD5257D3A9A003F74C3 /* NotificationNameExtension.swift */,
+				AD721FD8257D3FC3003F74C3 /* UIViewController+APIError.swift */,
 				AD721FB9257CFDBF003F74C3 /* API */,
 				AD721FB0257CEE7A003F74C3 /* Controllers */,
 			);
@@ -88,8 +101,9 @@
 		AD721FB0257CEE7A003F74C3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AD721F9D257CED95003F74C3 /* ViewController.swift */,
+				AD721F9D257CED95003F74C3 /* StargazersViewController.swift */,
 				AD721FC7257D21AE003F74C3 /* StargazerTableViewCell.swift */,
+				AD721FCD257D390A003F74C3 /* StargazersViewModel.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -125,6 +139,7 @@
 			children = (
 				AD721FBA257CFDCB003F74C3 /* APIManager.swift */,
 				AD721FBE257D1617003F74C3 /* APIError.swift */,
+				AD721FCA257D2A5A003F74C3 /* User.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -206,12 +221,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD721FBB257CFDCB003F74C3 /* APIManager.swift in Sources */,
-				AD721F9E257CED95003F74C3 /* ViewController.swift in Sources */,
+				AD721F9E257CED95003F74C3 /* StargazersViewController.swift in Sources */,
+				AD721FD9257D3FC3003F74C3 /* UIViewController+APIError.swift in Sources */,
 				AD721F9A257CED95003F74C3 /* AppDelegate.swift in Sources */,
 				AD721FC8257D21AE003F74C3 /* StargazerTableViewCell.swift in Sources */,
+				AD721FCB257D2A5A003F74C3 /* User.swift in Sources */,
+				AD721FD3257D3A5F003F74C3 /* Notifier.swift in Sources */,
 				AD721FBF257D1617003F74C3 /* APIError.swift in Sources */,
+				AD721FD6257D3A9A003F74C3 /* NotificationNameExtension.swift in Sources */,
 				AD721F9C257CED95003F74C3 /* SceneDelegate.swift in Sources */,
 				AD721FC4257D210A003F74C3 /* Config.swift in Sources */,
+				AD721FCE257D390A003F74C3 /* StargazersViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
