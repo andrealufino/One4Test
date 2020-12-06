@@ -16,6 +16,8 @@
 		AD721FB7257CEF14003F74C3 /* AMLStarterKit in Frameworks */ = {isa = PBXBuildFile; productRef = AD721FB6257CEF14003F74C3 /* AMLStarterKit */; };
 		AD721FBB257CFDCB003F74C3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD721FBA257CFDCB003F74C3 /* APIManager.swift */; };
 		AD721FBF257D1617003F74C3 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD721FBE257D1617003F74C3 /* APIError.swift */; };
+		AD721FC4257D210A003F74C3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD721FC3257D210A003F74C3 /* Config.swift */; };
+		AD721FC8257D21AE003F74C3 /* StargazerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD721FC7257D21AE003F74C3 /* StargazerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		AD721FA7257CED98003F74C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD721FBA257CFDCB003F74C3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		AD721FBE257D1617003F74C3 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		AD721FC3257D210A003F74C3 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		AD721FC7257D21AE003F74C3 /* StargazerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			children = (
 				AD721F99257CED95003F74C3 /* AppDelegate.swift */,
 				AD721F9B257CED95003F74C3 /* SceneDelegate.swift */,
+				AD721FC3257D210A003F74C3 /* Config.swift */,
 				AD721FB9257CFDBF003F74C3 /* API */,
 				AD721FB0257CEE7A003F74C3 /* Controllers */,
 			);
@@ -84,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				AD721F9D257CED95003F74C3 /* ViewController.swift */,
+				AD721FC7257D21AE003F74C3 /* StargazerTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -202,8 +208,10 @@
 				AD721FBB257CFDCB003F74C3 /* APIManager.swift in Sources */,
 				AD721F9E257CED95003F74C3 /* ViewController.swift in Sources */,
 				AD721F9A257CED95003F74C3 /* AppDelegate.swift in Sources */,
+				AD721FC8257D21AE003F74C3 /* StargazerTableViewCell.swift in Sources */,
 				AD721FBF257D1617003F74C3 /* APIError.swift in Sources */,
 				AD721F9C257CED95003F74C3 /* SceneDelegate.swift in Sources */,
+				AD721FC4257D210A003F74C3 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
