@@ -21,6 +21,7 @@ protocol StargazersViewModelDelegate {
 
 // MARK: - Stargazers View Model
 
+/// The ViewModel of the StargazersViewControllers.
 class StargazersViewModel {
     
     var delegate: StargazersViewModelDelegate?
@@ -55,6 +56,8 @@ class StargazersViewModel {
 
 extension StargazersViewModel {
     
+    /// Start fetching the stargazers for the Luminous repository.
+    /// - Parameter startingFromFirstPage: `true` if you want to fetch starting from the first page, `false` if not.
     func fetchStargazers(startingFromFirstPage: Bool? = false) {
         
         if isLastPage! && !startingFromFirstPage! {
