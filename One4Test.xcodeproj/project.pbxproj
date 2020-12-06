@@ -89,10 +89,10 @@
 				AD721F99257CED95003F74C3 /* AppDelegate.swift */,
 				AD721F9B257CED95003F74C3 /* SceneDelegate.swift */,
 				AD721FC3257D210A003F74C3 /* Config.swift */,
-				AD721FD2257D3A5F003F74C3 /* Notifier.swift */,
-				AD721FD5257D3A9A003F74C3 /* NotificationNameExtension.swift */,
-				AD721FD8257D3FC3003F74C3 /* UIViewController+APIError.swift */,
+				AD721FDE257D658A003F74C3 /* Utils */,
+				AD721FDD257D657D003F74C3 /* Extensions */,
 				AD721FB9257CFDBF003F74C3 /* API */,
+				AD721FDF257D659B003F74C3 /* Entities */,
 				AD721FB0257CEE7A003F74C3 /* Controllers */,
 			);
 			path = Classes;
@@ -102,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				AD721F9D257CED95003F74C3 /* StargazersViewController.swift */,
-				AD721FC7257D21AE003F74C3 /* StargazerTableViewCell.swift */,
 				AD721FCD257D390A003F74C3 /* StargazersViewModel.swift */,
+				AD721FC7257D21AE003F74C3 /* StargazerTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -139,9 +139,33 @@
 			children = (
 				AD721FBA257CFDCB003F74C3 /* APIManager.swift */,
 				AD721FBE257D1617003F74C3 /* APIError.swift */,
-				AD721FCA257D2A5A003F74C3 /* User.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		AD721FDD257D657D003F74C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AD721FD5257D3A9A003F74C3 /* NotificationNameExtension.swift */,
+				AD721FD8257D3FC3003F74C3 /* UIViewController+APIError.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AD721FDE257D658A003F74C3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AD721FD2257D3A5F003F74C3 /* Notifier.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AD721FDF257D659B003F74C3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				AD721FCA257D2A5A003F74C3 /* User.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

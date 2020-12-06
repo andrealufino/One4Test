@@ -8,6 +8,8 @@
 import Foundation
 
 
+// MARK: - Stargazers View Model - Delegate
+
 protocol StargazersViewModelDelegate {
     func stargazersViewModelDidStartFetching(_ viewModel: StargazersViewModel)
     func stargazersViewModelDidFinishFetching(_ viewModel: StargazersViewModel, isLastPage: Bool)
@@ -15,6 +17,9 @@ protocol StargazersViewModelDelegate {
     func stargazersViewModel(_ viewModel: StargazersViewModel, didFinishFetchWithError message: String, isLastPage: Bool)
     func stargazersViewModelNoMoreUsersToFetch(_ viewModel: StargazersViewModel)
 }
+
+
+// MARK: - Stargazers View Model
 
 class StargazersViewModel {
     
@@ -43,6 +48,12 @@ class StargazersViewModel {
         
         users = [User]()
     }
+}
+
+
+// MARK: - Public Methods
+
+extension StargazersViewModel {
     
     func fetchStargazers(startingFromFirstPage: Bool? = false) {
         
