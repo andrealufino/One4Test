@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		AD721FA1257CED95003F74C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD721F9F257CED95003F74C3 /* Main.storyboard */; };
 		AD721FA3257CED98003F74C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD721FA2257CED98003F74C3 /* Assets.xcassets */; };
 		AD721FA6257CED98003F74C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD721FA4257CED98003F74C3 /* LaunchScreen.storyboard */; };
+		AD721FB7257CEF14003F74C3 /* AMLStarterKit in Frameworks */ = {isa = PBXBuildFile; productRef = AD721FB6257CEF14003F74C3 /* AMLStarterKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD721FB7257CEF14003F74C3 /* AMLStarterKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +125,9 @@
 			dependencies = (
 			);
 			name = One4Test;
+			packageProductDependencies = (
+				AD721FB6257CEF14003F74C3 /* AMLStarterKit */,
+			);
 			productName = One4Test;
 			productReference = AD721F96257CED95003F74C3 /* One4Test.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +155,9 @@
 				Base,
 			);
 			mainGroup = AD721F8D257CED95003F74C3;
+			packageReferences = (
+				AD721FB5257CEF14003F74C3 /* XCRemoteSwiftPackageReference "AMLStarterKit" */,
+			);
 			productRefGroup = AD721F97257CED95003F74C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -381,6 +389,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD721FB5257CEF14003F74C3 /* XCRemoteSwiftPackageReference "AMLStarterKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/andrealufino/AMLStarterKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD721FB6257CEF14003F74C3 /* AMLStarterKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD721FB5257CEF14003F74C3 /* XCRemoteSwiftPackageReference "AMLStarterKit" */;
+			productName = AMLStarterKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD721F8E257CED95003F74C3 /* Project object */;
 }
