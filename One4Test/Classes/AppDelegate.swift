@@ -14,6 +14,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        APIManager.Github.getStargazers(
+            forRepo: "Luminous",
+            resultsPerPage: 50,
+            page: 1) { (result) in
+            
+            switch result {
+            case .success(_):
+                print("Success!")
+            case .failure(_):
+                print("Failure!")
+            }
+        }
+        
         return true
     }
 

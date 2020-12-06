@@ -15,7 +15,7 @@
         "repositoryURL": "https://github.com/andrealufino/AMLExtensions",
         "state": {
           "branch": "main",
-          "revision": "281c10e35a2f54a65d788d1b93fde41b5ed8822a",
+          "revision": "e4c1e19253b59a3a858d8e3c2c5ed98d52b9d670",
           "version": null
         }
       },
@@ -24,8 +24,17 @@
         "repositoryURL": "https://github.com/andrealufino/AMLStarterKit",
         "state": {
           "branch": "main",
-          "revision": "6202fcea3c35adfa1c4f5f054113a22f9836b7ff",
+          "revision": "7cf0ecb27514550909b164ef1e2d2edec99fc991",
           "version": null
+        }
+      },
+      {
+        "package": "Reachability",
+        "repositoryURL": "https://github.com/ashleymills/Reachability.swift",
+        "state": {
+          "branch": null,
+          "revision": "c01bbdf2d633cf049ae1ed1a68a2020a8bda32e2",
+          "version": "5.1.0"
         }
       },
       {
