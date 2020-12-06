@@ -32,12 +32,10 @@ struct APIManager {
                     completion(.failure(APIError.noInternetConnection))
                     return
                 }
-                
                 guard resultsPerPage > 0 else {
                     completion(.failure(APIError.init(debugMessage: "resultsPerPage must be greater than 0.")))
                     return
                 }
-                
                 guard page > 0 else {
                     completion(.failure(APIError.generic))
                     return

@@ -18,7 +18,7 @@ class StargazerTableViewCell: UITableViewCell {
 }
 
 
-// MARK: -
+// MARK: - Awake from nib
 
 extension StargazerTableViewCell {
     
