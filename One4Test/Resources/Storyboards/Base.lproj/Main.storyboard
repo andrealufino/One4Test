@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="nxe-Fl-YUx">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="nxe-Fl-YUx">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifierStargazer" rowHeight="100" id="RhE-9b-8pA" customClass="StargazerTableViewCell" customModule="One4Test" customModuleProvider="target">
@@ -72,7 +72,14 @@
                             <constraint firstItem="nxe-Fl-YUx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="vVc-6p-C38"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Omi-uk-iRw"/>
+                    <navigationItem key="navigationItem" id="Omi-uk-iRw">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="arrow.clockwise" catalog="system" id="oe4-GK-Ar9">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="refresh" destination="BYZ-38-t0r" id="1Oo-ZO-UOg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="nxe-Fl-YUx" id="cIM-UA-B4V"/>
                     </connections>
@@ -101,6 +108,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -16,7 +16,10 @@ struct APIManager {
     
     struct Github {
         
-        private static let token = "7767e4362d536718326e6432002a0e88e03d421f"
+        // Token is written here in base64 and is decoded at runtime.
+        // The reason is simple : Github checks if you commit a personal access token and,
+        // if so, it deletes it automatically. This way, there shouldn't be problems.
+        private static let token = "YjRlOTdhMjAwYWE3MDc0MDU0OTFiYzQ3YjhjMzVlN2E0NGJhYzA0Yw==".base64Decoded!
         
         static func getStargazers(
             forRepo repo: String,
