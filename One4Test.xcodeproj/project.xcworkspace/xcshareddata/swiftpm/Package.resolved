@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire",
+        "state": {
+          "branch": null,
+          "revision": "9e0328127dfb801cefe8ac53a13c0c90a7770448",
+          "version": "5.4.0"
+        }
+      },
+      {
+        "package": "AMLExtensions",
+        "repositoryURL": "https://github.com/andrealufino/AMLExtensions",
+        "state": {
+          "branch": "main",
+          "revision": "fa9e6083485e2c0f406d8f129b29d016becf93f0",
+          "version": null
+        }
+      },
+      {
+        "package": "AMLStarterKit",
+        "repositoryURL": "https://github.com/andrealufino/AMLStarterKit",
+        "state": {
+          "branch": "main",
+          "revision": "7cf0ecb27514550909b164ef1e2d2edec99fc991",
+          "version": null
+        }
+      },
+      {
+        "package": "Reachability",
+        "repositoryURL": "https://github.com/ashleymills/Reachability.swift",
+        "state": {
+          "branch": null,
+          "revision": "c01bbdf2d633cf049ae1ed1a68a2020a8bda32e2",
+          "version": "5.1.0"
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON",
+        "state": {
+          "branch": null,
+          "revision": "2b6054efa051565954e1d2b9da831680026cd768",
+          "version": "5.0.0"
+        }
+      },
+      {
+        "package": "Valet",
+        "repositoryURL": "https://github.com/square/Valet",
+        "state": {
+          "branch": null,
+          "revision": "c9e7a1e5e0cb73f07cafb403c53c4922e22e5357",
+          "version": "4.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

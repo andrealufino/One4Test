@@ -7,6 +7,9 @@
 
 import UIKit
 
+@_exported import AMLExtensions
+@_exported import AMLStarterKit
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
